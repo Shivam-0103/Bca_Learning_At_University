@@ -2,6 +2,28 @@
 
 int main() 
 {
-  
+  int num,count=0;
+ printf("please enter a number:\n");
+ scanf("%d",&num);
+ 
+ while(num!=0)
+ {
+ 	if(num%8==0)
+ 	{
+ 		count++;
+ 		printf("\nthe total number of count of valid number are:%d\n ",count);
+ 		printf("enter another number:");
+	 scanf("%d",&num);
+	 
+	 }
+	 else
+	 {
+	 	printf("\n");
+	 	printf("%d is not divisible by 8!!\n",num);
+	 		printf("\nthe total number of count of valid number are:%d!! ",count);
+		 break;	
+	 }
+	 
+ }
   return 0;
 }
